@@ -1,0 +1,356 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: #f8faf9;
+    color: #1e293b;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+    min-height: 650px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* Color Variables */
+.green-text {
+    color: #22c55e;
+}
+
+/* --- Left Banner Section --- */
+.left-banner {
+    width: 48%;
+    background-color: #a7f3d0;
+    padding: 36px 40px 0 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    position: relative;
+    border-right: 3px solid #e2e8f0; 
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    z-index: 2;
+}
+
+.brand-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.brand-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.brand-text h2 {
+    font-size: 20px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.leaf-icon {
+    width: 20px;
+    height: 20px;
+    color: #22c55e;
+    fill: #22c55e;
+    display: inline-block;
+}
+
+.banner-content {
+    z-index: 2;
+    margin-bottom: 0;
+}
+
+.banner-content h1 {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.3;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    color: #334155;
+    font-size: 13px;
+    line-height: 1.5;
+    max-width: 360px;
+}
+
+.illustration-area {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    transform: scale(1.08); 
+    transform-origin: bottom center;
+    margin-bottom: -14px !important;
+}
+
+/* --- Right Form Section --- */
+.right-form {
+    width: 52%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.form-header h2 {
+    font-size: 26px;
+    font-weight: 800;
+    color: #0f172a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.form-header p {
+    color: #94a3b8;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 18px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.input-field {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-field .icon {
+    position: absolute;
+    left: 14px;
+    width: 18px;
+    height: 18px;
+    color: #94a3b8;
+}
+
+.input-field .eye-icon {
+    position: absolute;
+    right: 14px;
+    width: 18px;
+    height: 18px;
+    color: #94a3b8;
+    cursor: pointer;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 12px 42px 12px 42px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.input-field input:focus {
+    border-color: #22c55e;
+    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.15);
+}
+
+.forgot-link {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 600;
+    color: #22c55e;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #22c55e;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #16a34a;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+    color: #94a3b8;
+    font-size: 12px;
+}
+
+.divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.divider span {
+    padding: 0 12px;
+}
+
+.btn-google {
+    width: 100%;
+    padding: 11px;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #1e293b;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-google:hover {
+    background-color: #f8fafc;
+}
+
+.btn-google img {
+    width: 18px;
+    height: 18px;
+}
+
+.register-text {
+    text-align: center;
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 20px;
+}
+
+.register-text a {
+    color: #22c55e;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.register-text a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN (TABLET & HP)
+   ========================================== */
+
+@media screen and (max-width: 900px) {
+    body {
+        align-items: flex-start;
+        padding: 16px 12px;
+    }
+
+    .login-wrapper {
+        flex-direction: column;
+        height: auto;
+        min-height: auto;
+        max-height: none;
+        overflow: visible;
+        box-shadow: none;
+        background-color: transparent;
+        gap: 16px; /* Memberikan jarak bersih antara banner dan form */
+    }
+
+    .left-banner {
+        width: 100%;
+        min-height: 360px;
+        padding: 24px 20px 0 20px;
+        border-right: none;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+
+    .banner-content h1 {
+        font-size: 22px;
+    }
+
+    .illustration-area {
+        height: 160px;
+    }
+
+    .right-form {
+        width: 100%;
+        padding: 28px 20px;
+        margin-top: 0 !important; /* DIBUAT 0 AGAR TIDAK MENIMPA GAMBAR */
+        background-color: #ffffff;
+        border-radius: 16px;
+        position: static;
+        z-index: 1;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+}
